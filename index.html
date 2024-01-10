@@ -56,56 +56,78 @@
             </div>
             <div class="proyectos-box">
                 <div class="proyecto 1">
-                    <h5>Viviendas particulares</h5>
+                    <h4>Viviendas particulares</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>VIVIENDAS PARTICULARES</h3>
+                    </div>
                 </div>
                 <div class="proyecto 2">
-                    <h5>Reciclajes y Puesta en valor</h5>
+                    <h4>Reciclajes y Puesta en valor</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>RECICLAJES Y PUESTA EN VALOR</h3>
+                    </div>
                 </div>
                 <div class="proyecto 3">
-                    <h5>Comercio</h5>
+                    <h4>Comercio</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>VIVIENDAS COLECTIVAS</h3>
+                    </div>
                 </div>
                 <div class="proyecto 4">
-                    <h5>Viviendas colectivas</h5>
+                    <h4>Viviendas colectivas</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>COMERCIOS</h3>
+                    </div>
                 </div>
                 <div class="proyecto 5">
-                    <h5>Viviendas particulares</h5>
+                    <h4>Viviendas particulares</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>COMERCIOS</h3>
+                    </div>
                 </div>
                 <div class="proyecto 6">
-                    <h5>Viviendas particulares</h5>
+                    <h4>Viviendas particulares</h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <div>
+                        <h3>COMERCIOS</h3>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="contacto">
-
-            <div class="contacto-text">
-                <div class="contact-title">
-                    <h1>Contacto</h1>
+        <section class="contact">
+            <div class="contact-title">
+                <h1>CONTACTO</h1>
+                <hr>
+            </div>
+            <div class="contact-row">
+                <div class="text-col">
+                    <div>
+                        <h2>Guillermo Gülden</h2>
+                        <h5>Arquitecto U.B.A.</h5>
+                        <p>Zárate, Buenos Aires, Argentina</p>
+                        <h5>+54 3487-4101441</h5>
+                    </div>
                 </div>
-                <div>
-                    <h2>Guillermo Gülden</h2>
-                    <p>Arquitecto U.B.A.</p>
-                    <p>Zárate, Buenos Aires, Argentina</p>
-                    <p>+54 3487-4101441</p>
+                <div class="form__container">
+                    <h3>Si te interesan los proyectos online o querés que te asesoremos para un proyecto, completá el
+                        formulario y nos vamos a contactar con vos</h3>
+                    <form action="contact_form.php" method="post">
+                        <div></div>
+                        <input type="email" name="email" placeholder="EMAIL" required>
+                        <input type="text" name="nombre" placeholder="NOMBRE Y APELLIDO" required>
+                        <textarea name="mensaje" placeholder="TU MENSAJE" required></textarea>
+                        <span>TENES QUE COMPLETAR TODOS LOS CAMPOS</span>
+                        <input type="submit" value="ENVIAR">
+                    </form>
                 </div>
             </div>
-            <div class="contacto-form">
-                <form action="enviar.php" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-
-        </div>
+        </section>
 </body>
 
 </html>

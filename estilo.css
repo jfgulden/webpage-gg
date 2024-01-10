@@ -71,26 +71,54 @@ header {
 .body {
     background-color: #fff;
     height: 100%;
-    padding-top: 10px;
+    margin: 5px 0;
 }
 
-.contacto {
+.contact {
+    background-color: #a1a1a1;
+}
+
+.contact-row {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact-title {
-    background-color: #1a1c1d;
     height: 100%;
-    padding: 200px 0px;
+    padding: 40px 0px;
+    margin: 0;
 }
 
 .contact-title h1 {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
-    font-size: 50px;
-    padding-bottom: 20px;
+    font-size: 1.7em;
     text-align: center;
+    color: #272525;
+}
+
+.contact-title hr {
+    width: 80px;
+}
+
+.contact .text-col {
+    flex: 0 0 auto;
+
+    padding: 0px 50px;
+
+}
+
+.contact .text-col h2 {
+    font-size: 1.7em;
+}
+
+.contact .text-col p {
+    padding: 20px 0px;
+}
+
+.contact .text-col h5 {
+    font-size: 1.3em;
+    padding: 10px 0px;
 }
 
 .proyectos h1 {
@@ -100,38 +128,65 @@ header {
     color: #272525;
 }
 
+hr {
+    width: 150px;
+    border: 2px solid #363635;
+    align-self: center;
+    margin: auto;
+    color: #363635;
+}
+
 .proyectos-title {
     background-color: #a1a1a1;
     padding: 40px 0px;
     margin: 0;
+}
 
+.proyectos-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 200px 0px;
 }
 
 .proyecto {
-    height: 300px;
-    border-radius: 6px;
-    margin: 10px 15px;
-    padding: 15px 25px;
-    display: inline-block;
-    box-sizing: border-box;
-    cursor: pointer;
     background-image: url("images/proy_residenciales_ej.jpeg");
+    height: 400px;
     background-position: center;
     background-size: cover;
+    border-radius: 4px;
+    margin: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    min-width: 50px;
+    transition: transform 1s;
+    position: relative;
+    border: 3px solid #ababab;
 }
 
-.proyectos {
-    flex-basis: 50%;
 
-}
-
-hr {
-    font-size: 85%;
-    width: 150px;
-    border-width: 3px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    align-self: center;
-    margin: auto;
+.proyecto p {
     color: #fff;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.proyecto:hover {
+    transform: translateY(-10px);
+}
+
+.proyecto h3 {
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ababab;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
