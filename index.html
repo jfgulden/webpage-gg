@@ -9,7 +9,7 @@
     <meta name="description" content="descripcion de la pagina de guillermo">
     <meta name="author" content="Guillermo Gulden">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +21,25 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="page-container">
         <header class="site-header">
-            <div class="site-container">
+            <div class="site-header__container">
                 <div class="navbar">
                     <img src="images/logo_provisorio.png" alt="logo" class="logo">
                     <nav>
-                        <ul class="sections-list">
-                            <li class="sections-list-index"><a href="index.html">INICIO</a></li>
-                            <li class="sections-list-proyects"><a href="#proyects-sect">PROYECTOS</a></li>
-                            <li class="sections-list-contact"><a href="contacto.html">CONTACTO</a></li>
+                        <ul class="nav-list">
+                            <li class="nav-list__item"><a href="index.html">INICIO</a></li>
+                            <li class="nav-list__item"><a href="#projects-sect">PROYECTOS</a></li>
+                            <li class="nav-list__item"><a href="contacto.html">CONTACTO</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="header-text">
-                    <h2 class="header__name">Guillermo</h2>
-                    <h1>Gülden</h1>
-                    <h2 class="header__uba">Arquitecto U.B.A.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro iure labore repellat,
+                    <h2 class="header-text__name">Guillermo</h2>
+                    <h1 class="header-text__surname">Gülden</h1>
+                    <h2 class="header-text__uba">Arquitecto U.B.A.</h2>
+                    <p class="header-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium porro iure labore repellat,
                         nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
                         iusto numquam illum.</p>
                 </div>
@@ -49,66 +50,67 @@
         </header>
 
     </div>
-    <div class="body">
-
-        <div class="proyectos">
-            <div class="proyectos-title">
+    <div class="main-content">
+        <div class="projects">
+            <div class="projects__title">
                 <h1> Proyectos destacados </h1>
-                <hr>
+                <hr class="projects__separator">
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro iure labore repellat,
+            <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro
+                iure labore repellat,
                 nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at iusto
                 numquam illum.</p>
-            <div class="proyectos-box">
-                <div class="proyecto 1">
+            <div class="projects__container">
+                <div class="project 1">
                     <div>
-                        <h3>VIVIENDAS PARTICULARES</h3>
+                        <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
                     </div>
                 </div>
-                <div class="proyecto 2">
+                <div class="project 2">
                     <div>
-                        <h3>RECICLAJES Y PUESTA EN VALOR</h3>
+                        <h3 class="project__title">RECICLAJES Y PUESTA EN VALOR</h3>
                     </div>
                 </div>
-                <div class="proyecto 3">
+                <div class="project 3">
                     <div>
-                        <h3>VIVIENDAS COLECTIVAS</h3>
+                        <h3 class="project__title">VIVIENDAS COLECTIVAS</h3>
                     </div>
                 </div>
-                <div class="proyecto 4">
+                <div class="project 4">
                     <div>
-                        <h3>COMERCIOS</h3>
+                        <h3 class="project__title">COMERCIOS</h3>
                     </div>
                 </div>
-                <div class="proyecto 5">
+                <div class="project 5">
                     <div>
-                        <h3>COMERCIOS</h3>
+                        <h3 class="project__title">COMERCIOS</h3>
                     </div>
                 </div>
-                <div class="proyecto 6">
+                <div class="project 6">
                     <div>
-                        <h3>COMERCIOS</h3>
+                        <h3 class="project__title">COMERCIOS</h3>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section class="contact">
-            <div class="contact-title">
+        <section class="contact-section">
+            <div class="contact-section__title">
                 <h1>CONTACTO</h1>
-                <hr>
+                <hr class="contact-section__separator">
             </div>
-            <div class="contact-row">
-                <div class="text-col">
-                    <div>
-                        <h2>Guillermo Gülden</h2>
-                        <h5>Arquitecto U.B.A.</h5>
-                        <p>Zárate, Buenos Aires, Argentina</p>
-                        <h5>+54 3487-4101441</h5>
+            <div class="contact-section__row">
+                <div class="contact-info">
+                    <div class="contact-info__content">
+                        <h2 class="contact-info__name">Guillermo Gülden</h2>
+                        <h5 class="contact-info__title">Arquitecto U.B.A.</h5>
+                        <p class="contact-info__location">Zárate, Buenos Aires, Argentina</p>
+                        <h5 class="contact-info__phone">+54 3487-4101441</h5>
                     </div>
                 </div>
-                <div class="form__container">
-                    <h3>Si te interesan los proyectos online o querés que te asesoremos para un proyecto, completá el
+                <div class="contact-form__container">
+                    <h3 class="contact-form__description">Si te interesan los projects online o querés que te asesoremos
+                        para un project, completá el
                         formulario y nos vamos a contactar con vos</h3>
                     <form action="contact_form.php" method="post">
                         <div></div>

@@ -1,17 +1,14 @@
-header {
-    padding: 0px 50px;
-}
-
-.container {
-    background-color: #476d80;
-    width: 100%;
-    height: 95vh;
+.page-container {
     background-color: #476d80;
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 95vh;
 }
 
-.header-text h1 {
+/*HEADER*/
+
+.header-text__surname {
     font-family: 'Poppins', sans-serif;
     font-size: 6em;
     color: #fff;
@@ -20,7 +17,7 @@ header {
 }
 
 
-.header__name {
+.header-text__name {
     font-family: 'Poppins', sans-serif;
     font-size: 4.4em;
     color: #d9d8d8;
@@ -28,7 +25,7 @@ header {
 
 }
 
-.header__uba {
+.header-text__uba {
     font-family: 'Poppins', sans-serif;
     color: #d9d8d8;
     font-size: 2.6em;
@@ -55,12 +52,12 @@ header {
     padding-left: 20px;
 }
 
-.sections-list li {
+.nav-list li {
     display: inline-block;
     margin-left: 10px;
 }
 
-.sections-list li a {
+.nav-list li a {
     text-decoration: none;
     color: #fff;
     font-size: 1.3em;
@@ -70,9 +67,10 @@ header {
 }
 
 .header-text {
+    margin: 100px 200px;
     width: 50%;
     height: 50%;
-    padding: 100px 0px 50px 54px;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 
@@ -84,69 +82,28 @@ header {
 
 .header-text p {
     font-size: 25px;
-    padding-left: 5px;
+    padding: 30px 0px 30px 5px;
 }
 
-.body {
+
+/*MAIN*/
+
+.main-content {
     background-color: #fff;
     height: 100%;
     margin: 5px 0;
 }
 
-.contact {
-    background-color: #a1a1a1;
-}
+/*PROJECTS SECTION*/
 
-.contact-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.contact-title {
-    height: 100%;
-    padding: 40px 0px;
-    margin: 0;
-}
-
-.contact-title h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.7em;
-    text-align: center;
-    color: #272525;
-}
-
-.contact-title hr {
-    width: 80px;
-}
-
-.contact .text-col {
-    flex: 0 0 auto;
-    padding: 0px 50px;
-
-}
-
-.contact .text-col h2 {
-    font-size: 1.7em;
-}
-
-.contact .text-col p {
-    padding: 20px 0px;
-}
-
-.contact .text-col h5 {
-    font-size: 1.3em;
-    padding: 10px 0px;
-}
-
-.proyectos-title h1 {
+.projects__title h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     font-size: 2.6em;
     color: #272525;
 }
 
-hr {
+.projects__separator {
     width: 150px;
     border: 2px solid #272525;
     align-self: center;
@@ -154,25 +111,22 @@ hr {
     color: #272525;
 }
 
-.proyectos-title {
+.projects__title {
     background-color: #fff;
     padding: 40px 0px;
     margin: 0;
 }
 
-.proyectos p {
+.projects__description {
     margin: 100px 500px;
     font-size: 1.4em;
     display: block;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #272525;
-
-
 }
 
-
-.proyectos-box {
+.projects__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -184,8 +138,7 @@ hr {
     height: 100%;
 }
 
-
-.proyecto {
+.project {
     background-image: url("images/proy_residenciales_ej.jpeg");
     height: 500px;
     background-position: center;
@@ -200,23 +153,11 @@ hr {
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
-.proyecto p {
-    color: #fff;
-}
-
-h4 {
-    font-family: 'Poppins', sans-serif;
-    color: #fff;
-    text-shadow: 0 0 5px #999;
-}
-
-.proyecto:hover {
+.project:hover {
     transform: translateY(-10px);
 }
 
-.proyecto h3 {
+.project__title {
     padding: 10px 0px;
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
@@ -226,4 +167,58 @@ h4 {
     text-align: center;
     position: absolute;
     bottom: 0;
+}
+
+
+/*CONTACT SECTION*/
+
+.contact-section {
+    background-color: #a1a1a1;
+}
+
+.contact-section__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-section__title {
+    height: 100%;
+    padding: 40px 0px;
+    margin: 0;
+}
+
+.contact-section__title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7em;
+    text-align: center;
+    color: #272525;
+}
+
+.contact-section__separator {
+    width: 80px;
+    border: 2px solid #272525;
+    align-self: center;
+    margin: auto;
+    color: #272525;
+}
+
+.contact-info {
+    flex: 0 0 auto;
+    padding: 0px 50px;
+
+}
+
+.contact-info__name {
+    font-size: 1.7em;
+}
+
+.contact-info__location {
+    padding: 20px 0px;
+}
+
+.contact-info__phone,
+.contact-info__title {
+    font-size: 1.3em;
+    padding: 10px 0px;
 }
