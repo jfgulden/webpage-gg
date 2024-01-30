@@ -17,40 +17,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Guillermo Gülden - Arquitecto</title>
 </head>
 
 <body>
-    <div class="page-container">
-        <header class="site-header">
-            <div class="site-header__container">
-                <div class="navbar">
-                    <img src="images/logo_provisorio.png" alt="logo" class="logo">
-                    <nav>
-                        <ul class="nav-list">
-                            <li class="nav-list__item"><a href="index.html">INICIO</a></li>
-                            <li class="nav-list__item"><a href="#projects-sect">PROYECTOS</a></li>
-                            <li class="nav-list__item"><a href="contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-text">
-                    <h2 class="header-text__name">Guillermo</h2>
-                    <h1 class="header-text__surname">Gülden</h1>
-                    <h2 class="header-text__uba">Arquitecto U.B.A.</h2>
-                    <p class="header-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Accusantium porro iure labore repellat,
-                        nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
-                        iusto numquam illum.</p>
-                </div>
-
-            </div>
-
-
-        </header>
-
-    </div>
+    <header class="site-header">
+        <img src="images/logo_provisorio.png" alt="logo" class="logo">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="sidebar__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="nav-list__item"><a href="index.html">INICIO</a></li>
+                <li class="nav-list__item"><a href="#projects-sect">PROYECTOS</a></li>
+                <li class="nav-list__item"><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li class="hideOnMobile"><a href="index.html">INICIO</a></li>
+                <li class="hideOnMobile"><a href="#projects-sect">PROYECTOS</a></li>
+                <li class="hideOnMobile"><a href="contacto.html">CONTACTO</a></li>
+                <li class="menu-button" onclick=showSidebar() class="sidebar__item"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="main-content">
+        <div class="main-text">
+            <h2 class="main-text__name">Guillermo</h2>
+            <h1 class="main-text__surname">Gülden</h1>
+            <h2 class="main-text__uba">Arquitecto U.B.A.</h2>
+            <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium porro iure labore repellat,
+                nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
+                iusto numquam illum.</p>
+        </div>
         <div class="projects">
             <div class="projects__title">
                 <h1> Proyectos destacados </h1>
@@ -123,6 +129,7 @@
                 </div>
             </div>
         </section>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
