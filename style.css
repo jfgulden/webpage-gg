@@ -45,6 +45,11 @@
     background-color: #f0f0f0;
 }
 
+.site-header .close-sidebar-button a:hover {
+    background-color: transparent;
+    /*Le pongo transparente para desactivar el efecto en la X (close)*/
+}
+
 .site-header li:first-child {
     margin-right: auto;
 
@@ -204,7 +209,7 @@
 /*CONTACT SECTION*/
 
 .contact-section {
-    background-color: #a1a1a1;
+    background-color: #e9ecef;
 }
 
 .contact-section__row {
@@ -236,7 +241,8 @@
 
 .contact-info {
     flex: 0 0 auto;
-    padding: 0px 50px;
+    width: 20%;
+    padding: 20px;
 
 }
 
@@ -254,7 +260,120 @@
     padding: 10px 0px;
 }
 
+.contact-form__container {
+    flex: 0 0 auto;
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form__description {
+    font-size: 1.1;
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
 .menu-button {
+    display: none;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #476d80;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(4, 91, 137);
+    border-color: #000;
+}
+
+.manteca1 input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background: white;
+    font-size: 0.9em;
+}
+
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+}
+
+.wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: 100%;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wpcf7-submit {
+    color: #000000;
+    border: 2px solid #000000;
+    opacity: 0.5;
+    margin: 40px 0;
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+form label {
+    font-weight: 200;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.invalid-form-warning {
+    color: #626264;
+    font-size: 0.9em;
+    font-family: "Oswald", sans-serif;
     display: none;
 }
 

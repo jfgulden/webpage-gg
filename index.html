@@ -27,8 +27,8 @@
         <img src="images/logo_provisorio.png" alt="logo" class="logo">
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar() class="sidebar__item"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                            height="24" viewBox="0 -960 960 960" width="24">
+                <li class="close-sidebar-button" onclick=hideSidebar() class="sidebar__item"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg></a></li>
@@ -115,16 +115,44 @@
                     </div>
                 </div>
                 <div class="contact-form__container">
-                    <h3 class="contact-form__description">Si te interesan los projects online o querés que te asesoremos
-                        para un project, completá el
-                        formulario y nos vamos a contactar con vos</h3>
+                    <h3 class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS</h3>
                     <form action="contact_form.php" method="post">
-                        <div></div>
-                        <input type="email" name="email" placeholder="EMAIL" required>
-                        <input type="text" name="nombre" placeholder="NOMBRE Y APELLIDO" required>
-                        <textarea name="mensaje" placeholder="TU MENSAJE" required></textarea>
-                        <span>TENES QUE COMPLETAR TODOS LOS CAMPOS</span>
-                        <input type="submit" value="ENVIAR">
+                        <p>
+                            <label for="email">
+                                EMAIL
+                                <br>
+                                <span class="manteca1">
+                                    <input type="email" id="email" name="email" placeholder="Tu email">
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="nombre">
+                                NOMBRE Y APELLIDO
+                                <br>
+                                <span class="manteca1">
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="mensaje">
+                                MENSAJE
+                                <br>
+                                <span class="manteca1">
+                                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
+                                CAMPOS</span>
+                            <br>
+                            <input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="ENVIAR"
+                                onclick=validarFormulario()>
+                            <span class="wpcf7-spinner">
+                            </span>
+                        </p>
                     </form>
                 </div>
             </div>
