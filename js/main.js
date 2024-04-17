@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'flex'
@@ -17,5 +21,17 @@ function validarFormulario() {
     } else {
         document.getElementById('mensajeAdvertencia').style.display = 'none';
         document.getElementById('miFormulario').submit();
+    }
+}
+
+//No esta siendo usada, no me anduvo.
+function scrollIntoViewSmoothly(targetId) {
+    const targetElement = document.getElementById('project_sect');
+    if (targetElement) {
+        console.log("ID de destino:", targetId)
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+    else {
+        console.error("Elemento no encontrado:", targetId)
     }
 }
