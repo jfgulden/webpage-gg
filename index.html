@@ -9,103 +9,159 @@
     <meta name="description" content="descripcion de la pagina de guillermo">
     <meta name="author" content="Guillermo Gulden">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Guillermo Gülden - Arquitecto</title>
 </head>
 
 <body>
-    <div class="container">
-        <header class="site-header">
-            <div class="site-container">
-                <div class="navbar">
-                    <img src="images/logo_provisorio.png" alt="logo" class="logo">
-                    <nav>
-                        <ul class="sections-list">
-                            <li class="sections-list-index"><a href="index.html">INICIO</a></li>
-                            <li class="sections-list-proyects"><a href="#proyects-sect">PROYECTOS</a></li>
-                            <li class="sections-list-contact"><a href="contacto.html">CONTACTO</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header-text">
-                    <h1>Guillermo Gülden</h1>
-                    <h2>Arquitecto U.B.A.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro iure labore repellat,
-                        nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
-                        iusto numquam illum.</p>
-                </div>
+    <header class="site-header">
+        <img src="images/logo_provisorio.png" alt="logo" class="logo">
+        <nav>
+            <ul class="sidebar">
+                <li class="close-sidebar-button" onclick=hideSidebar() class="sidebar__item"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li class="nav-list__item"><a href="index.html">INICIO</a></li>
+                <li class="nav-list__item"><a href="#project_sect" onclick="scrollIntoViewSmoothly('project_sect')">
+                        PROYECTOS</a>
+                </li>
+                <li class=" nav-list__item"><a href="#contact_sect">CONTACTO</a></li>
+            </ul>
 
+            <ul class="nav-list">
+                <li class="hideOnMobile"><a href="index.html">INICIO</a></li>
+                <li class="hideOnMobile"><a href="#project_sect"
+                        onclick="scrollIntoViewSmoothly('project_sect')">PROYECTOS</a></li>
+                <li class=" hideOnMobile"><a href="#contact_sect">CONTACTO</a></li>
+                <li class="menu-button" onclick=showSidebar() class="sidebar__item"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="main-text">
+            <h2 class="main-text__name">Guillermo</h2>
+            <h1 class="main-text__surname">Gülden</h1>
+            <h2 class="main-text__uba">Arquitecto U.B.A.</h2>
+            <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium porro iure labore repellat,
+                nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
+                iusto numquam illum.</p>
+        </div>
+        <div id="project_sect" class="projects">
+            <div class="projects__title">
+                <h1> Proyectos destacados </h1>
+                <hr class="projects__separator">
             </div>
-
-
-        </header>
-
-    </div>
-    <div class="body">
-
-        <div class="proyectos">
-            <div class="proyectos-title">
-
-                <h1> PROYECTOS DESTACADOS </h1>
-                <hr>
-            </div>
-            <div class="proyectos-box">
-                <div class="proyecto 1">
-                    <h5>Viviendas particulares</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro
+                iure labore repellat,
+                nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at iusto
+                numquam illum.</p>
+            <div class="projects__container">
+                <div class="project 1">
+                    <div>
+                        <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
+                    </div>
                 </div>
-                <div class="proyecto 2">
-                    <h5>Reciclajes y Puesta en valor</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="project 2">
+                    <div>
+                        <h3 class="project__title">RECICLAJES Y PUESTA EN VALOR</h3>
+                    </div>
                 </div>
-                <div class="proyecto 3">
-                    <h5>Comercio</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="project 3">
+                    <div>
+                        <h3 class="project__title">VIVIENDAS COLECTIVAS</h3>
+                    </div>
                 </div>
-                <div class="proyecto 4">
-                    <h5>Viviendas colectivas</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="project 4">
+                    <div>
+                        <h3 class="project__title">COMERCIOS</h3>
+                    </div>
                 </div>
-                <div class="proyecto 5">
-                    <h5>Viviendas particulares</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="project 5">
+                    <div>
+                        <h3 class="project__title">COMERCIOS</h3>
+                    </div>
                 </div>
-                <div class="proyecto 6">
-                    <h5>Viviendas particulares</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                <div class="project 6">
+                    <div>
+                        <h3 class="project__title">COMERCIOS</h3>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="contacto">
-
-            <div class="contacto-text">
-                <div class="contact-title">
-                    <h1>Contacto</h1>
+        <section id="contact_sect" class="contact-section">
+            <div class="contact-section__title">
+                <h1>CONTACTO</h1>
+                <hr class="contact-section__separator">
+            </div>
+            <div class="contact-section__row">
+                <div class="contact-info">
+                    <div class="contact-info__content">
+                        <h2 class="contact-info__name">Guillermo Gülden</h2>
+                        <h5 class="contact-info__title">Arquitecto U.B.A.</h5>
+                        <p class="contact-info__location">Zárate, Buenos Aires, Argentina</p>
+                        <h5 class="contact-info__phone">+54 3487-4101441</h5>
+                    </div>
                 </div>
-                <div>
-                    <h2>Guillermo Gülden</h2>
-                    <p>Arquitecto U.B.A.</p>
-                    <p>Zárate, Buenos Aires, Argentina</p>
-                    <p>+54 3487-4101441</p>
+                <div class="contact-form__container">
+                    <h3 class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS</h3>
+                    <form action="contact_form.php" method="post">
+                        <p>
+                            <label for="email">
+                                EMAIL
+                                <br>
+                                <span class="to-fill-contact-field">
+                                    <input type="email" id="email" name="email" placeholder="Tu email">
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="nombre">
+                                NOMBRE Y APELLIDO
+                                <br>
+                                <span class="to-fill-contact-field">
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="mensaje">
+                                MENSAJE
+                                <br>
+                                <span class="to-fill-contact-field">
+                                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                                </span>
+                            </label>
+                        </p>
+                        <p>
+                            <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
+                                CAMPOS</span>
+                            <br>
+                            <input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="ENVIAR"
+                                onclick=validarFormulario()>
+                            <span class="wpcf7-spinner">
+                            </span>
+                        </p>
+                    </form>
                 </div>
             </div>
-            <div class="contacto-form">
-                <form action="enviar.php" method="post">
-                    <input type="text" name="nombre" placeholder="Nombre" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="asunto" placeholder="Asunto" required>
-                    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
-            </div>
-
-        </div>
+        </section>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
