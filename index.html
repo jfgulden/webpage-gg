@@ -36,15 +36,17 @@
                 <li class="nav-list__item"><a href="#project_sect" onclick="scrollIntoViewSmoothly('project_sect')">
                         PROYECTOS</a>
                 </li>
-                <li class=" nav-list__item"><a href="#contact_sect">CONTACTO</a></li>
+                <li class=" nav-list__item"><a href="#contact_sect"
+                        onclick="scrollIntoViewSmoothly('contact_sect')">CONTACTO</a></li>
             </ul>
 
-            <ul class="nav-list">
+            <ul class=" nav-list">
                 <li class="hideOnMobile"><a href="index.html">INICIO</a></li>
                 <li class="hideOnMobile"><a href="#project_sect"
                         onclick="scrollIntoViewSmoothly('project_sect')">PROYECTOS</a></li>
-                <li class=" hideOnMobile"><a href="#contact_sect">CONTACTO</a></li>
-                <li class="menu-button" onclick=showSidebar() class="sidebar__item"><a href="#"><svg
+                <li class=" hideOnMobile"><a href="#contact_sect"
+                        onclick="scrollIntoViewSmoothly('contact_sect')">CONTACTO</a></li>
+                <li class=" menu-button" onclick=showSidebar() class="sidebar__item"><a href="#"><svg
                             xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
@@ -52,53 +54,60 @@
         </nav>
     </header>
     <div class="main-content">
-        <div class="main-text">
-            <h2 class="main-text__name">Guillermo</h2>
-            <h1 class="main-text__surname">Gülden</h1>
-            <h2 class="main-text__uba">Arquitecto U.B.A.</h2>
-            <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium porro iure labore repellat,
-                nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
-                iusto numquam illum.</p>
+        <div class="home-screen">
+            <div class="main-text poppins">
+                <h1 class="main-text__name">Guillermo</h1>
+                <!--  chequear si particionar el nombre en dos h1 no afecta en las busquedas -->
+                <h1 class="main-text__surname">Gülden</h1>
+                <h2 class="main-text__uba">Arquitecto UBA</h2>
+                <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium porro iure labore repellat,
+                    nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
+                    iusto numquam illum.</p>
+            </div>
         </div>
         <div id="project_sect" class="projects">
             <div class="projects__title">
-                <h1> Proyectos destacados </h1>
+                <h1> PROYECTOS DESTACADOS </h1>
                 <hr class="projects__separator">
             </div>
-            <p class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro
-                iure labore repellat,
-                nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at iusto
-                numquam illum.</p>
+            <div class="projects__description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro
+                    iure labore repellat,
+                    nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at iusto
+                    numquam illum.</p>
+            </div>
             <div class="projects__container">
-                <div class="project 1">
-                    <div>
-                        <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
+                <div class="projects-boxes__container">
+                    <div class="project 1">
+                        <div class="project__description-div">
+                            <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="project 2">
-                    <div>
-                        <h3 class="project__title">RECICLAJES Y PUESTA EN VALOR</h3>
+                    <div class="project 2">
+                        <div class="project__description-div">
+                            <h3 class="project__title">RECICLAJES Y PUESTA EN VALOR</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="project 3">
-                    <div>
-                        <h3 class="project__title">VIVIENDAS COLECTIVAS</h3>
+                    <div class="project 3">
+                        <div class="project__description-div">
+                            <h3 class="project__title">VIVIENDAS COLECTIVAS</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="project 4">
-                    <div>
-                        <h3 class="project__title">COMERCIOS</h3>
+                    <div class="project 4">
+                        <div class="project__description-div">
+                            <h3 class="project__title">COMERCIOS</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="project 5">
-                    <div>
-                        <h3 class="project__title">COMERCIOS</h3>
+                    <div class="project 5">
+                        <div class="project__description-div">
+                            <h3 class="project__title">COMERCIOS</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="project 6">
-                    <div>
-                        <h3 class="project__title">COMERCIOS</h3>
+                    <div class="project 6">
+                        <div class="project__description-div">
+                            <h3 class="project__title">COMERCIOS</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,10 +121,10 @@
             <div class="contact-section__row">
                 <div class="contact-info">
                     <div class="contact-info__content">
-                        <h2 class="contact-info__name">Guillermo Gülden</h2>
-                        <h5 class="contact-info__title">Arquitecto U.B.A.</h5>
-                        <p class="contact-info__location">Zárate, Buenos Aires, Argentina</p>
-                        <h5 class="contact-info__phone">+54 3487-4101441</h5>
+                        <h1 class="contact-info__name">Guillermo Gülden</h1>
+                        <h2 class="contact-info__uba">Arquitecto U.B.A.</h2>
+                        <h2 class="contact-info__location">Zárate, Buenos Aires, Argentina</h2>
+                        <h2 class="contact-info__phone">Tel: +54 3487-4101441</h2>
                     </div>
                 </div>
                 <div class="contact-form__container">
