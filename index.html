@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/542617b152.js" crossorigin="anonymous"></script>
     <title>Guillermo Gülden - Arquitecto</title>
 </head>
 
@@ -118,55 +119,63 @@
                 <h1>CONTACTO</h1>
                 <hr class="contact-section__separator">
             </div>
-            <div class="contact-section__row">
-                <div class="contact-info">
-                    <div class="contact-info__content">
-                        <h1 class="contact-info__name">Guillermo Gülden</h1>
-                        <h2 class="contact-info__uba">Arquitecto U.B.A.</h2>
-                        <h2 class="contact-info__location">Zárate, Buenos Aires, Argentina</h2>
-                        <h2 class="contact-info__phone">Tel: +54 3487-4101441</h2>
+            <div class="container">
+                <div class="contact-section__row">
+                    <div class="contact-info">
+                        <!-- <h1 class="contact-info__title">Info.</h1> -->
+                        <div class="contact-info__box">
+                            <div class="contact-info__content">
+                                <h1 class="contact-info__name">Guillermo Gülden</h1>
+                                <h2 class="contact-info__uba">Arquitecto U.B.A.</h2>
+                                <h2 class="contact-info__location">Zárate, Buenos Aires, Argentina</h2>
+                                <h2 class="contact-info__phone">Tel: +54 3487-4101441</h2>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="contact-form__container">
-                    <h3 class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS</h3>
-                    <form action="contact_form.php" method="post">
-                        <p>
-                            <label for="email">
-                                EMAIL
+                    <div class="vertical-line"></div>
+                    <div class="horizontal-line"></div>
+                    <div class="contact-form__container">
+                        <p class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS
+                        </p>
+                        <form action="contact_form.php" method="post">
+                            <p>
+                                <label for="email">
+                                    EMAIL
+                                    <br>
+                                    <span class="to-fill-contact-field">
+                                        <input type="email" id="email" name="email" placeholder="Tu email">
+                                    </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="nombre">
+                                    NOMBRE Y APELLIDO
+                                    <br>
+                                    <span class="to-fill-contact-field">
+                                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
+                                    </span>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="mensaje">
+                                    MENSAJE
+                                    <br>
+                                    <span class="to-fill-contact-field">
+                                        <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                                    </span>
+                                </label>
+                            </p>
+                            <p class="send-button__p">
+                                <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
+                                    CAMPOS</span>
                                 <br>
-                                <span class="to-fill-contact-field">
-                                    <input type="email" id="email" name="email" placeholder="Tu email">
+                                <input type="submit" value="ENVIAR" onclick=validarFormulario()>
+                                <span class="wpcf7-spinner">
                                 </span>
-                            </label>
-                        </p>
-                        <p>
-                            <label for="nombre">
-                                NOMBRE Y APELLIDO
-                                <br>
-                                <span class="to-fill-contact-field">
-                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
-                                </span>
-                            </label>
-                        </p>
-                        <p>
-                            <label for="mensaje">
-                                MENSAJE
-                                <br>
-                                <span class="to-fill-contact-field">
-                                    <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
-                                </span>
-                            </label>
-                        </p>
-                        <p>
-                            <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
-                                CAMPOS</span>
-                            <br>
-                            <input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit" value="ENVIAR"
-                                onclick=validarFormulario()>
-                            <span class="wpcf7-spinner">
-                            </span>
-                        </p>
-                    </form>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
