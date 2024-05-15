@@ -1,9 +1,19 @@
 html {
     scroll-behavior: smooth;
     /*CUIDADO. Se lo aplica a toda la pag*/
-    font-size: 62.5%;
-    /* Set the root font size to 62.5% (10px assuming default 16px) */
 
+    /* Set the root font size to 62.5% (10px assuming default 16px) */
+    font-size: 62.5%;
+
+}
+
+h1 {
+    font-size: clamp(2rem, 2vw+1rem, 3.5rem);
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: clamp(1.25rem, 2vw+0.5rem, 1.5rem);
 }
 
 /*HEADER*/
@@ -103,7 +113,7 @@ html {
     justify-content: center;
     align-items: center; */
     background-color: #2B434F;
-    height: 80vh;
+
 }
 
 .main-content {
@@ -111,18 +121,18 @@ html {
 }
 
 .main-text {
-    padding: 100px;
+    padding: calc(2vw + 30px);
     width: 60%;
     color: #fff;
 }
 
 .main-text p {
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 0.786rem + 1.905vw, 2.5rem);
 
 }
 
 .main-text__surname {
-    font-size: 9rem;
+    font-size: clamp(4rem, 0.429rem + 9.524vw, 9rem);
     color: #fff;
     margin: 0;
     font-weight: 600;
@@ -130,16 +140,17 @@ html {
 
 
 .main-text__name {
-    font-size: 6.75rem;
+    /* font-size: 6.75rem; */
     /*Aparentemente el tamaño del nombre es el 75% del tamaño del apellido*/
     color: #d9d8d8;
     font-weight: 400;
     margin: 0;
+    font-size: clamp(3rem, 0.321rem + 7.143vw, 6.75rem)
 }
 
 .main-text__uba {
     color: #d9d8d8;
-    font-size: 3.2rem;
+    font-size: clamp(1.5rem, 0.286rem + 3.238vw, 3.2rem);
     margin: 30px 0px;
     font-weight: 400;
 }
@@ -149,28 +160,36 @@ html {
 
 .projects {
     background-color: #fff;
-    padding: 5px;
 }
 
-.projects__title h1 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 2.4em;
-    color: #272525;
-}
 
-.projects__separator {
-    width: 150px;
+.separator {
     border: 2px solid #272525;
     align-self: center;
     margin: auto;
     color: #272525;
+
 }
 
-.projects__title {
-    background-color: #fff;
+.contact-section__separator {
+    width: calc(1vw + 60px);
+}
+
+.projects__separator {
+    width: calc(3.2vw + 90px);
+}
+
+.section__title {
+    height: 100%;
     padding: 40px 0px;
     margin: 0;
+}
+
+.section__title h1 {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: clamp(1.8rem, 1.371rem + 1.143vw, 2.4rem);
+    color: #272525;
 }
 
 .projects__description {
@@ -183,7 +202,7 @@ html {
 
 .projects__description p {
     width: 60%;
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 0.971rem + 1.143vw, 2rem);
     text-align: center;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #272525;
@@ -198,7 +217,7 @@ html {
 }
 
 .projects-boxes__container {
-    width: 80%;
+    width: 90%;
     background-color: #476d80;
     display: flex;
     flex-wrap: wrap;
@@ -218,24 +237,24 @@ html {
 }
 
 .project {
-    min-width: 400px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-color: #fff;
     cursor: pointer;
     margin: 20px;
-    transition: transform 1s;
+    transition: transform 0.2s;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.2);
     border-radius: 2px;
     position: relative;
 }
 
 .project:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .project__title {
     padding: 20px 0px;
-    font-size: 1.9rem;
+    font-size: clamp(1.3rem, 0.871rem + 1.143vw, 1.9rem);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: #000;
 
@@ -268,26 +287,10 @@ html {
     justify-content: space-between;
 }
 
-.contact-section__title {
-    height: 100%;
-    padding: 40px 0px;
-    margin: 0;
-}
 
-.contact-section__title h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
-    text-align: center;
-    color: #272525;
-}
 
-.contact-section__separator {
-    width: 80px;
-    border: 2px solid #272525;
-    align-self: center;
-    margin: auto;
-    color: #272525;
-}
+
+
 
 .contact-info {
     flex: 0 0 auto;
@@ -369,16 +372,18 @@ input[type=submit] {
     padding: 10px;
     border: 2px solid #000;
     font-size: 1.4rem;
+
 }
 
 .to-fill-contact-field input {
     width: 100%;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+    border: 1px solid #17445E;
+    border-radius: 2px;
     background: white;
     font-size: 1.4rem;
     padding: 10px;
     margin: 10px 0;
+
 }
 
 form p {
@@ -389,8 +394,8 @@ label textarea {
     height: 100px;
     font-size: 1.4rem;
     width: 100%;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
+    border: 1px solid #17445E;
+    border-radius: 2px;
     box-sizing: border-box;
     resize: vertical;
     padding: 10px;
@@ -417,6 +422,23 @@ form label {
     display: none;
 }
 
+@media(max-width: 978px) {
+    .project {
+        width: 350px;
+        height: 350px;
+        padding: 0;
+    }
+}
+
+@media(max-width: 868px) {
+    .project {
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        margin: 10px;
+    }
+
+}
 
 @media(max-width: 768px) {
     .hideOnMobile {
@@ -427,8 +449,16 @@ form label {
         display: block;
     }
 
+    .main-text {
+        width: 80%;
+    }
+
     .container {
         padding: 0;
+    }
+
+    .separator {
+        border: 1px solid #272525;
     }
 
     .contact-section__row {
@@ -455,26 +485,110 @@ form label {
         padding: 40px;
     }
 
-    .vertical-line {
-        display: none;
-    }
-
     .horizontal-line {
         display: block;
         width: 80%;
         border-top: 1px solid #c7c4c4;
     }
+
+    .projects-boxes__container {
+        padding: 5px;
+        width: 95%;
+
+    }
+
+    .projects__container {
+        padding: 40px 0;
+    }
+
+    .projects__description {
+        padding: 20px;
+    }
+
+    .projects__description p {
+        width: 90%;
+    }
+
+    .project__title {
+        padding: 10px 0px;
+    }
+
+    .project {
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        margin: 5px;
+    }
+
 }
+
+@media (max-width: 716px) {
+    .project {
+        width: 250px;
+        height: 250px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 548px) {
+    .project {
+        width: 200px;
+        height: 200px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 452px) {
+    .project {
+        width: 190px;
+        height: 190px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    .project {
+        width: 180px;
+        height: 180px;
+        padding: 0;
+    }
+}
+
+
+@media (max-width: 412px) {
+    .project {
+        width: 170px;
+        height: 170px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 388px) {
+    .project {
+        width: 162px;
+        height: 162px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 372px) {
+    .project {
+        width: 156px;
+        height: 156px;
+        padding: 0;
+    }
+}
+
+
+
 
 @media(max-width: 400px) {
     .sidebar {
         width: 100%;
     }
-
-
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
@@ -484,6 +598,7 @@ form label {
     .container {
         max-width: 720px;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -502,4 +617,4 @@ form label {
     .container {
         max-width: 1320px;
     }
-}
+} */
