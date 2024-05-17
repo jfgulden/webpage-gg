@@ -275,6 +275,8 @@ h2 {
 
 .horizontal-line {
     display: none;
+    width: 55%;
+    border-top: 1px solid #c7c4c4;
 }
 
 .contact-section {
@@ -287,11 +289,6 @@ h2 {
     justify-content: space-between;
 }
 
-
-
-
-
-
 .contact-info {
     flex: 0 0 auto;
     width: 33.33333%;
@@ -303,13 +300,13 @@ h2 {
 
 .contact-info__box {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     height: 100%;
     border-radius: 5px;
 }
 
 .contact-info__content {
-    color: #000000;
+    color: hsla(240, 1%, 27%, 0.888);
     text-align: start;
 }
 
@@ -319,21 +316,18 @@ h2 {
 } */
 
 .contact-info__name {
-    font-size: 2.4rem;
+    font-size: clamp(1.8rem, 1.371rem + 1.143vw, 2.4rem);
+    margin: 0;
+    margin-bottom: 50px;
 }
 
 .contact-info__location {
     padding: 40px 0px;
-
-}
-
-.contact-info__uba {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.457rem + 0.381vw, 1.8rem)
 }
 
 .contact-info__phone {
-    font-size: 1.8rem;
-    padding: 10px 0px;
+    font-size: clamp(1.6rem, 1.457rem + 0.381vw, 1.8rem);
 }
 
 .contact-form__container {
@@ -342,7 +336,7 @@ h2 {
 }
 
 .contact-form__description {
-    font-size: 1.8rem;
+    font-size: clamp(1.6rem, 1.457rem + 0.381vw, 1.8rem);
     margin-bottom: 30px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 
@@ -371,7 +365,7 @@ input[type=submit] {
     cursor: pointer;
     padding: 10px;
     border: 2px solid #000;
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 1.057rem + 0.381vw, 1.4rem);
 
 }
 
@@ -409,7 +403,7 @@ form {
 form label {
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: clamp(1.4rem, 1.114rem + 0.762vw, 1.8rem);
     font-weight: 200;
     line-height: 1.5em;
     padding-left: 2px;
@@ -487,8 +481,6 @@ form label {
 
     .horizontal-line {
         display: block;
-        width: 80%;
-        border-top: 1px solid #c7c4c4;
     }
 
     .projects-boxes__container {
