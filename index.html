@@ -24,45 +24,46 @@
 </head>
 
 <body>
-    <header class="site-header">
-        <img src="images/logo_provisorio.png" alt="logo" class="logo">
-        <nav>
-            <ul class="sidebar">
-                <li class="close-sidebar-button" onclick=hideSidebar() class="sidebar__item"><a href="#"><svg
-                            xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg></a></li>
-                <li class="nav-list__item" onclick=hideSidebar()><a href="index.html">INICIO</a></li>
-                <li class="nav-list__item" onclick=hideSidebar()><a href="#project_sect">
-                        PROYECTOS</a>
-                </li>
-                <li class=" nav-list__item" onclick=hideSidebar()><a href="#contact_sect">CONTACTO</a></li>
-            </ul>
+    <div class="main-content">
+        <div class="home-screen">
+            <div class="main-text poppins">
+                <h1 class="main-text__surname">Gülden</h1>
+                <h1 class="main-text__name">Guillermo</h1>
+                <!--  chequear si particionar el nombre en dos h1 no afecta en las busquedas -->
+                <h2 class="main-text__uba">Arquitecto U.B.A</h2>
+                <!-- <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium porro iure labore repellat,
+                    nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
+                    iusto numquam illum.</p> -->
+            </div>
+            <!-- <header class="site-header"> -->
+            <!-- <nav class="navbar"> -->
+            <!-- <ul class="sidebar">
+                    <li class="close-sidebar-button" onclick=hideSidebar() class="sidebar__item"><a href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                                <path
+                                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg></a></li>
+                    <li class="nav-list__item" onclick=hideSidebar()><a href="index.html">INICIO</a></li>
+                    <li class="nav-list__item" onclick=hideSidebar()><a href="#project_sect">
+                            PROYECTOS</a>
+                    </li>
+                    <li class=" nav-list__item" onclick=hideSidebar()><a href="#contact_sect">CONTACTO</a></li>
+                </ul> -->
 
             <ul class=" nav-list">
                 <li class="hideOnMobile"><a href="index.html">INICIO</a></li>
+                <hr class="hr-navbar">
                 <li class="hideOnMobile"><a href="#project_sect">PROYECTOS</a></li>
+                <hr class="hr-navbar">
                 <li class=" hideOnMobile"><a href="#contact_sect">CONTACTO</a></li>
                 <li class=" menu-button" onclick=showSidebar() class="sidebar__item"><a href="#"><svg
                             xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
             </ul>
-        </nav>
-    </header>
-    <div class="main-content">
-        <div class="home-screen">
-            <div class="main-text poppins">
-                <h1 class="main-text__name">Guillermo</h1>
-                <!--  chequear si particionar el nombre en dos h1 no afecta en las busquedas -->
-                <h1 class="main-text__surname">Gülden</h1>
-                <h2 class="main-text__uba">Arquitecto UBA</h2>
-                <p class="main-text__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Accusantium porro iure labore repellat,
-                    nobis officia, aliquam eum, magnam sint quidem ratione cupiditate pariatur! Aut eaque ab at
-                    iusto numquam illum.</p>
-            </div>
+            <!-- </nav> -->
+            <!-- </header> -->
         </div>
         <section id="project_sect" class="projects">
             <div class="section__title">
@@ -78,6 +79,7 @@
             <div class="projects__container">
                 <div class="projects-boxes__container">
                     <div class="project 1">
+                        <img src="">
                         <div class="project__description-div">
                             <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
                         </div>
