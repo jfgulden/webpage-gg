@@ -45,7 +45,7 @@ h2 {
     align-items: start;
     background-color: #f2ead7;
     padding: 40px 0;
-    width: 220px;
+    width: 18%;
 }
 
 /* .delayed-link:hover {
@@ -133,7 +133,7 @@ h2 {
 }
 
 .main-text {
-    padding: calc(2vw + 30px);
+    padding: calc(2vw + 80px);
     width: 60%;
     color: #fff;
 }
@@ -249,8 +249,8 @@ h2 {
 }
 
 .project {
-    width: 400px;
-    height: 400px;
+    width: 515px;
+    height: 515px;
     background-color: #fff;
     cursor: pointer;
     margin: 20px;
