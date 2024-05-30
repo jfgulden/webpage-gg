@@ -19,7 +19,7 @@ h2 {
 /*HEADER*/
 
 /* .site-header {
-    background-color: #448390;
+    background-color: rgb(0,61,76);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,9 +43,10 @@ h2 {
     flex-direction: column;
     justify-content: end;
     align-items: start;
-    background-color: #f2ead7;
-    padding: 40px 0;
-    width: 18%;
+    background-color: rgb(203, 196, 188);
+    padding: 2vh 0;
+    width: 26%;
+    max-width: 250px;
 }
 
 /* .delayed-link:hover {
@@ -59,19 +60,19 @@ h2 {
 }
 
 .hr-navbar {
-    color: #448390;
+    color: rgb(0, 61, 76);
     width: 70%;
 }
 
 .nav-list li a {
-    padding: 0 30px;
+    padding: 0 2vw;
     height: 100%;
     display: flex;
     align-items: center;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: #448390;
-    font-size: 2rem;
+    color: rgb(0, 61, 76);
+    font-size: clamp(1.5rem, 1.143rem + 0.952vw, 2rem);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -122,18 +123,18 @@ h2 {
     display: flex;
     /* justify-content: center;
     align-items: center; */
-    background-color: #448390;
+    background-color: rgb(0, 61, 76);
 
 }
 
 
 
 .main-content {
-    background-color: #448390;
+    background-color: rgb(0, 61, 76);
 }
 
 .main-text {
-    padding: calc(2vw + 80px);
+    padding: calc(2vw + 40px);
     width: 60%;
     color: #fff;
 }
@@ -230,7 +231,7 @@ h2 {
 
 .projects-boxes__container {
     width: 90%;
-    background-color: #448390;
+    background-color: rgb(0, 61, 76);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -383,7 +384,7 @@ input[type=submit] {
 
 .to-fill-contact-field input {
     width: 100%;
-    border: 1px solid #448390;
+    border: 1px solid rgb(0, 61, 76);
     border-radius: 2px;
     background: white;
     font-size: 1.4rem;
@@ -400,7 +401,7 @@ label textarea {
     height: 100px;
     font-size: 1.4rem;
     width: 100%;
-    border: 1px solid #448390;
+    border: 1px solid rgb(0, 61, 76);
     border-radius: 2px;
     box-sizing: border-box;
     resize: vertical;
@@ -465,14 +466,10 @@ form label {
         display: none;
     }
 
+    /* 
     .menu-button {
         display: block;
-    }
-
-    .main-text {
-        width: 80%;
-    }
-
+    } */
     .container {
         padding: 0;
     }
