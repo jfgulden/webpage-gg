@@ -18,16 +18,6 @@ h2 {
 
 /*HEADER*/
 
-/* .site-header {
-    background-color: rgb(0,61,76);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-} */
-
 .nav-list nav {
     padding: 10px;
 }
@@ -57,6 +47,7 @@ h2 {
 
 .nav-list li {
     height: 50px;
+    width: 100%;
 }
 
 .hr-navbar {
@@ -72,21 +63,12 @@ h2 {
     transition: all 0.3s ease 0s;
     text-decoration: none;
     color: rgb(0, 61, 76);
-    font-size: clamp(1.5rem, 1.143rem + 0.952vw, 2rem);
+    font-size: clamp(1.4rem, 0.971rem + 1.143vw, 2rem);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 .nav-list li a:hover {
-    background-color: #f0f0f0;
-}
-
-.nav-list .close-sidebar-button a:hover {
-    background-color: transparent;
-    /*Le pongo transparente para desactivar el efecto en la X (close)*/
-}
-
-.nav-list li:first-child {
-    margin-right: auto;
+    background-color: rgb(230, 226, 221);
 }
 
 .sidebar {
@@ -121,8 +103,6 @@ h2 {
 
 .home-screen {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     background-color: rgb(0, 61, 76);
 
 }
@@ -222,21 +202,18 @@ h2 {
 }
 
 .projects__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #fff;
     padding: 56px 0;
 }
 
 .projects-boxes__container {
-    width: 90%;
-    background-color: rgb(0, 61, 76);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
+    background-color: rgb(203, 196, 188);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .project__description-div {
@@ -250,8 +227,7 @@ h2 {
 }
 
 .project {
-    width: 515px;
-    height: 515px;
+    width: 90%;
     background-color: #fff;
     cursor: pointer;
     margin: 20px;
@@ -322,11 +298,6 @@ h2 {
     color: hsla(240, 1%, 27%, 0.888);
     text-align: start;
 }
-
-/* .contact-info__title {
-    font-size: 2.4rem;
-    margin: 0 4px;
-} */
 
 .contact-info__name {
     font-size: clamp(1.8rem, 1.371rem + 1.143vw, 2.4rem);
@@ -429,36 +400,11 @@ form label {
     display: none;
 }
 
-@media(max-width: 1450px) {
-    .project {
-        width: 390px;
-        height: 390px;
+@media(min-width: 820px) {
+    .projects-boxes__container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
-}
-
-@media(max-width: 1300px) {
-    .project {
-        width: 348px;
-        height: 348px;
-    }
-}
-
-@media(max-width: 978px) {
-    .project {
-        width: 350px;
-        height: 350px;
-        padding: 0;
-    }
-}
-
-@media(max-width: 868px) {
-    .project {
-        width: 300px;
-        height: 300px;
-        padding: 0;
-        margin: 10px;
-    }
-
 }
 
 @media(max-width: 768px) {
@@ -466,10 +412,10 @@ form label {
         display: none;
     }
 
-    /* 
     .menu-button {
         display: block;
-    } */
+    }
+
     .container {
         padding: 0;
     }
@@ -506,18 +452,8 @@ form label {
         display: block;
     }
 
-    .projects-boxes__container {
-        padding: 5px;
-        width: 95%;
-
-    }
-
-    .projects__container {
-        padding: 40px 0;
-    }
-
     .projects__description {
-        padding: 20px;
+        padding: 20px 0;
     }
 
     .projects__description p {
@@ -526,79 +462,5 @@ form label {
 
     .project__title {
         padding: 10px 0px;
-    }
-
-    .project {
-        width: 300px;
-        height: 300px;
-        padding: 0;
-        margin: 5px;
-    }
-
-}
-
-@media (max-width: 716px) {
-    .project {
-        width: 250px;
-        height: 250px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 548px) {
-    .project {
-        width: 200px;
-        height: 200px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 452px) {
-    .project {
-        width: 190px;
-        height: 190px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 430px) {
-    .project {
-        width: 180px;
-        height: 180px;
-        padding: 0;
-    }
-}
-
-
-@media (max-width: 412px) {
-    .project {
-        width: 170px;
-        height: 170px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 388px) {
-    .project {
-        width: 162px;
-        height: 162px;
-        padding: 0;
-    }
-}
-
-@media (max-width: 372px) {
-    .project {
-        width: 156px;
-        height: 156px;
-        padding: 0;
-    }
-}
-
-
-
-
-@media(max-width: 400px) {
-    .sidebar {
-        width: 100%;
     }
 }

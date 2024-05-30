@@ -35,3 +35,14 @@ function scrollIntoViewSmoothly(targetId) {
         console.error("Elemento no encontrado:", targetId)
     }
 }
+
+function fitProjectSize() {
+    const squares = document.querySelectorAll('.project');
+    squares.forEach(square => {
+        square.style.height = `${square.offsetWidth}px`;
+    });
+}
+
+
+window.addEventListener('resize', fitProjectSize);
+window.addEventListener('load', fitProjectSize);
