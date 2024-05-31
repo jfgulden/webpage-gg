@@ -1,6 +1,6 @@
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//     window.scrollTo(0, 0);
+// }
 
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
@@ -36,13 +36,38 @@ function scrollIntoViewSmoothly(targetId) {
     }
 }
 
-function fitProjectSize() {
-    const squares = document.querySelectorAll('.project');
+function setSquareSize() {
+    const squares = document.querySelectorAll('.square-size');
     squares.forEach(square => {
         square.style.height = `${square.offsetWidth}px`;
     });
 }
 
+function setHomeScreenHeight() {
+    var img = new Image();
+    img.src = './images/encabezado_blanco_web_Gulden_2024_2.png';
 
-window.addEventListener('resize', fitProjectSize);
-window.addEventListener('load', fitProjectSize);
+    img.onload = function () {
+        var section = document.getElementById('home-screen');
+        section.style.height = img.height + 'px';
+    };
+
+}
+function setLogoSize() {
+    var logo = document.getElementById('logo');
+    var navbar = document.getElementById('nav-list');
+    const navbarHeight = navbar.offsetHeight;
+    logo.style.width = `${navbarHeight}px`;
+    const proporcionAnchoAlto = logo.naturalWidth / logo.naturalHeight;
+    logo.style.width = `${navbarHeight * proporcionAnchoAlto}px`;
+
+}
+window.addEventListener('resize', function () {
+    setSquareSize();
+    setLogoSize();
+});
+window.addEventListener('load', function () {
+    setSquareSize();
+    setLogoSize();
+    // setHomeScreenHeight();
+});

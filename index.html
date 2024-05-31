@@ -25,20 +25,19 @@
 
 <body>
     <div class="main-content">
-        <div class="home-screen">
-            <div class="main-text poppins">
-                <h1 class="main-text__surname">Gülden</h1>
-                <h1 class="main-text__name">Guillermo</h1>
-                <!--  chequear si particionar el nombre en dos h1 no afecta en las busquedas -->
-                <h2 class="main-text__uba">Arquitecto U.B.A</h2>
+        <div class="home-screen" id="home-screen">
+            <div class="main-text">
+                <img id="logo" src="./images/file.png" alt="Arquitecto Guillermo Gülden">
             </div>
-            <ul class=" nav-list">
-                <li class="navbar-item"><a href="index.html">INICIO</a></li>
-                <hr class="hr-navbar">
-                <li class="navbar-item"><a href="#project_sect">PROYECTOS</a></li>
-                <hr class="hr-navbar">
-                <li class="navbar-item"><a href="#contact_sect">CONTACTO</a></li>
-            </ul>
+            <div class="navbar-container">
+                <ul id="nav-list" class=" nav-list">
+                    <li class="navbar-item"><a href="index.html">INICIO</a></li>
+                    <hr class="hr-navbar">
+                    <li class="navbar-item"><a href="#project_sect">PROYECTOS</a></li>
+                    <hr class="hr-navbar">
+                    <li class="navbar-item"><a href="#contact_sect">CONTACTO</a></li>
+                </ul>
+            </div>
         </div>
         <section id="project_sect" class="projects">
             <div class="section__title">
@@ -53,33 +52,33 @@
             </div>
             <div class="projects__container">
                 <div class="projects-boxes__container">
-                    <div class="project 1">
+                    <div class="project 1 square-size">
                         <img src="">
                         <div class="project__description-div">
                             <h3 class="project__title">VIVIENDAS PARTICULARES</h3>
                         </div>
                     </div>
-                    <div class="project 2">
+                    <div class="project 2 square-size">
                         <div class="project__description-div">
                             <h3 class="project__title">RECICLAJES Y PUESTA EN VALOR</h3>
                         </div>
                     </div>
-                    <div class="project 3">
+                    <div class="project 3 square-size">
                         <div class="project__description-div">
                             <h3 class="project__title">VIVIENDAS COLECTIVAS</h3>
                         </div>
                     </div>
-                    <div class="project 4">
+                    <div class="project 4 square-size">
                         <div class="project__description-div">
                             <h3 class="project__title">COMERCIOS</h3>
                         </div>
                     </div>
-                    <div class="project 5">
+                    <div class="project 5 square-size">
                         <div class="project__description-div">
                             <h3 class="project__title">COMERCIOS</h3>
                         </div>
                     </div>
-                    <div class="project 6">
+                    <div class="project 6 square-size">
                         <div class="project__description-div">
                             <h3 class="project__title">COMERCIOS</h3>
                         </div>
@@ -95,9 +94,9 @@
             </div>
             <div class="container">
                 <div class="contact-section__row">
-                    <div class="contact-info">
-                        <!-- <h1 class="contact-info__title">Info.</h1> -->
-                        <div class="contact-info__box">
+                    <!-- <div class="contact-info"> -->
+                    <!-- <h1 class="contact-info__title">Info.</h1> -->
+                    <!-- <div class="contact-info__box">
                             <div class="contact-info__content">
                                 <h1 class="contact-info__name">Arquitecto Guillermo Gülden</h1>
                                 <h2 class="contact-info__location">Zárate, Buenos Aires, Argentina</h2>
@@ -105,48 +104,66 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="vertical-line hideOnMobile"></div>
-                    <hr class="horizontal-line">
+                    </div> -->
+                    <!-- <div class="vertical-line hideOnMobile"></div>
+                    <hr class="horizontal-line"> -->
+                    <!-- <div class="form-labels-div">
+                        <label for="email">
+                            EMAIL
+                        </label>
+                        <label for="nombre">
+                            NOMBRE Y APELLIDO
+                        </label>
+                        <label for="mensaje">
+                            MENSAJE
+                        </label>
+                    </div> -->
                     <div class="contact-form__container">
                         <p class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS
                         </p>
                         <form action="contact_form.php" method="post">
-                            <p>
-                                <label for="email">
-                                    EMAIL
-                                    <br>
-                                    <span class="to-fill-contact-field">
-                                        <input type="email" id="email" name="email" placeholder="Tu email">
-                                    </span>
-                                </label>
-                            </p>
-                            <p>
+                            <div class="form-group">
                                 <label for="nombre">
-                                    NOMBRE Y APELLIDO
-                                    <br>
-                                    <span class="to-fill-contact-field">
-                                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido">
-                                    </span>
+                                    nombre
                                 </label>
-                            </p>
-                            <p>
+                                <input class="form-input" type="text" id="nombre" name="nombre"
+                                    placeholder="Tu nombre y apellido">
+                            </div>
+                            <div class="form-group">
+                                <div class="div-label">
+
+                                    <label for="email">
+                                        email
+                                    </label>
+                                </div>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="Tu email">
+                            </div>
+                            <div class="form-group">
+                                <div class="div-label">
+
+                                    <label for="telefono">
+                                        tel
+                                    </label>
+                                </div>
+                                <input class="form-input" type="tel" id="tel" name="telefono" placeholder="Tu telefono">
+                            </div>
+                            <div class="form-group">
                                 <label for="mensaje">
-                                    MENSAJE
-                                    <br>
-                                    <span class="to-fill-contact-field">
-                                        <textarea name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
-                                    </span>
+                                    mensaje
                                 </label>
-                            </p>
-                            <p class="send-button__p">
-                                <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
-                                    CAMPOS</span>
-                                <br>
-                                <input type="submit" value="ENVIAR" onclick=validarFormulario()>
-                                <span class="wpcf7-spinner">
-                                </span>
-                            </p>
+                                <textarea class="message-contact-field" name="mensaje" id="mensaje"
+                                    placeholder="Tu mensaje">
+                            </textarea>
+                            </div>
+                            <!-- <p class="send-button__p"> -->
+                            <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
+                                CAMPOS
+                            </span>
+
+                            <span class="wpcf7-spinner">
+                                <input class="send-button__contact-form" type="submit" value="ENVIAR"
+                                    onclick=validarFormulario()>
+                            </span>
                         </form>
                     </div>
                 </div>
