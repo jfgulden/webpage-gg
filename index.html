@@ -88,15 +88,15 @@
         </section>
 
         <section id="contact_sect" class="contact-section">
-            <div class="section__title">
+            <!-- <div class="section__title">
                 <h1>CONTACTO</h1>
                 <hr class="separator contact-section__separator">
-            </div>
-            <div class="container">
-                <div class="contact-section__row">
-                    <!-- <div class="contact-info"> -->
-                    <!-- <h1 class="contact-info__title">Info.</h1> -->
-                    <!-- <div class="contact-info__box">
+            </div> -->
+
+            <div class="contact-section__row">
+                <!-- <div class="contact-info"> -->
+                <!-- <h1 class="contact-info__title">Info.</h1> -->
+                <!-- <div class="contact-info__box">
                             <div class="contact-info__content">
                                 <h1 class="contact-info__name">Arquitecto Guillermo Gülden</h1>
                                 <h2 class="contact-info__location">Zárate, Buenos Aires, Argentina</h2>
@@ -105,9 +105,9 @@
 
                         </div>
                     </div> -->
-                    <!-- <div class="vertical-line hideOnMobile"></div>
+                <!-- <div class="vertical-line hideOnMobile"></div>
                     <hr class="horizontal-line"> -->
-                    <!-- <div class="form-labels-div">
+                <!-- <div class="form-labels-div">
                         <label for="email">
                             EMAIL
                         </label>
@@ -118,58 +118,57 @@
                             MENSAJE
                         </label>
                     </div> -->
-                    <div class="contact-form__container">
-                        <p class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS
-                        </p>
-                        <form action="contact_form.php" method="post">
-                            <div class="form-group">
-                                <label for="nombre">
-                                    nombre
-                                </label>
-                                <input class="form-input" type="text" id="nombre" name="nombre"
-                                    placeholder="Tu nombre y apellido">
-                            </div>
-                            <div class="form-group">
-                                <div class="div-label">
+                <div class="contact-form__container">
+                    <p class="contact-form__description">COMPLETÁ EL FORMULARIO Y NOS VAMOS A CONTACTAR CON VOS
+                    </p>
+                    <form action="contact_form.php" method="post">
+                        <div class="form-group inherited-size">
+                            <label for="nombre">
+                                nombre
+                            </label>
+                            <input class="form-input" type="text" id="name_input" name="nombre"
+                                placeholder="Tu nombre y apellido">
+                        </div>
+                        <div class="form-group inherited-size">
+                            <label for="email">
+                                email
+                            </label>
 
-                                    <label for="email">
-                                        email
-                                    </label>
-                                </div>
-                                <input class="form-input" type="email" id="email" name="email" placeholder="Tu email">
-                            </div>
-                            <div class="form-group">
-                                <div class="div-label">
+                            <input class="form-input" type="email" id="email_input" name="email" placeholder="Tu email">
+                        </div>
+                        <div class="form-group inherited-size">
 
-                                    <label for="telefono">
-                                        tel
-                                    </label>
-                                </div>
-                                <input class="form-input" type="tel" id="tel" name="telefono" placeholder="Tu telefono">
-                            </div>
-                            <div class="form-group">
-                                <label for="mensaje">
-                                    mensaje
-                                </label>
-                                <textarea class="message-contact-field" name="mensaje" id="mensaje"
-                                    placeholder="Tu mensaje">
-                            </textarea>
-                            </div>
-                            <!-- <p class="send-button__p"> -->
-                            <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
-                                CAMPOS
-                            </span>
+                            <label for="telefono">
+                                tel
+                            </label>
 
-                            <span class="wpcf7-spinner">
-                                <input class="send-button__contact-form" type="submit" value="ENVIAR"
-                                    onclick=validarFormulario()>
-                            </span>
-                        </form>
-                    </div>
+                            <input class="form-input" type="tel" id="tel" name="phone_input" placeholder="Tu telefono">
+                        </div>
+                        <div class="form-group inherited-size">
+                            <label id="message_label" for="mensaje">
+                                mensaje
+                            </label>
+                            <textarea class="message-contact-field" name="mensaje" id="message_input"
+                                placeholder="Tu mensaje">
+                                </textarea>
+                        </div>
+                        <span class="invalid-form-warning" aria-hidden="true">TENES QUE COMPLETAR TODOS LOS
+                            CAMPOS
+                        </span>
+
+                        <span class="wpcf7-spinner">
+                            <input class="send-button__contact-form" type="submit" value="ENVIAR"
+                                onclick=validarFormulario()>
+                        </span>
+                    </form>
+                </div>
+                <div class="contact-info__bar">
+
                 </div>
             </div>
-        </section>
-        <script src="js/main.js"></script>
+    </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

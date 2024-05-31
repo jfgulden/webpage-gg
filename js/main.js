@@ -43,16 +43,6 @@ function setSquareSize() {
     });
 }
 
-function setHomeScreenHeight() {
-    var img = new Image();
-    img.src = './images/encabezado_blanco_web_Gulden_2024_2.png';
-
-    img.onload = function () {
-        var section = document.getElementById('home-screen');
-        section.style.height = img.height + 'px';
-    };
-
-}
 function setLogoSize() {
     var logo = document.getElementById('logo');
     var navbar = document.getElementById('nav-list');
@@ -62,12 +52,25 @@ function setLogoSize() {
     logo.style.width = `${navbarHeight * proporcionAnchoAlto}px`;
 
 }
+
+function setLabelSize() {
+    var labels = document.querySelectorAll('.form-group.inherited-size label'); //Funciona como un and. Si pusiera una ',' entre las clases funciona como un or.
+    var input_text = document.getElementById('name_input');
+    labels.forEach(label => {
+        padding = (input_text.offsetHeight - label.offsetHeight) / 2;
+        label.style.paddingTop = `${padding - 1}px`;
+        label.style.paddingBottom = `${padding - 1}px`;
+        console.log("entra");
+    });
+}
+
 window.addEventListener('resize', function () {
     setSquareSize();
     setLogoSize();
+    setLabelSize();
 });
 window.addEventListener('load', function () {
     setSquareSize();
     setLogoSize();
-    // setHomeScreenHeight();
+    setLabelSize();
 });
