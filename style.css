@@ -520,9 +520,6 @@ h2 {
     .contact-info__container{
         margin-top: 60px;
     }
-    input::placeholder, textarea::placeholder {
-        opacity: 0;
-    }
 }
 
 @media(min-width: 820px) {
